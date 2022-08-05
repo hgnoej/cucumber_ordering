@@ -41,7 +41,7 @@ $ cd ~/catkin_we/src/ordering/src
 $ rosrun ordering publisher.py
 ```
 
-* cucumber weights file [DOWNLOAD](https://drive.google.com/file/d/1RSzCzxxeflkGGB4y9GMLQCJY_EiZE-id/view?usp=sharing)
+* Cucumber weights file [DOWNLOAD](https://drive.google.com/file/d/1RSzCzxxeflkGGB4y9GMLQCJY_EiZE-id/view?usp=sharing)
 ```
 Add in yolo_network_config/weights/cucumber.weights
 ```
