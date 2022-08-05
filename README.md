@@ -24,6 +24,8 @@ Add in yolo_network_config/weights/cucumber.weights
 ```
 $ cd ~/catkin_ws/src
 $ git clone -- https://github.com/hgnoej/cucumber_ordering.git
+$ unzip darknet_ros.zip
+$ mv darknet_ros ordering ~/catkin_ws/src/
 $ cd ..
 $ catkin_make
 
