@@ -19,42 +19,31 @@ $ catkin_make
 Add in yolo_network_config/weights/cucumber.weights
 ```
 
-* perception
+
 ```
 $ cd ~/catkin_ws/src
 $ git clone --recursive https://github.com/leggedrobotics/darknet_ros.git
 $ cd ..
 $ catkin_make
 
+* perception
+terminal 1
 $ roslaunch darknet_ros object_detection.launch
 
+terminal 2
 * estimate position 
 $ rosrun darknet_ros show_depth.py
 
+terminal 3
 * ordering
 $ cd ~/catkin_ws/src/ordering/src
 $ rosrun ordering GAorder -g 10 -p 10 -k 10 -m 10
 $ ^C
 
-$
+terminal 4
+$ cd ~/catkin_we/src/ordering/src
+$ rosrun ordering publisher.py
 ```
 
-* cucumber_detection
-```
-$ git clone https://github.com/hgnoej/cucumber_detection.git
-$ cd cucumber_detection/darknet_ros
-
-in config directory
-$ cp -r ros.yaml ~/catkin_ws/src/darknet_ros/darknets_ros/config
-$ cp -r cucumber.yaml ~/catkin_ws/src/darknet_ros/darknets_ros/config
-
-in launch directory
-$ cp -r bringup_d435.launch ~/catkin_ws/src/darknet_ros/darknet_ros/launch
-$ cp -r darknet_ros.launch ~/catkin_ws/src/darknet_ros/darknet_ros/launch
-$ cp -r object_detection.launch ~/catkin_ws/src/darknet_ros/darknet_ros/launch
-
-in yolo_network_config/cfg/
-$ cp -r cucumber.cfg ~/catkin_ws/src/darknet_ros/darknet_ros/cfg
-```
 
 
