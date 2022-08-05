@@ -19,7 +19,7 @@ $ catkin_make
 Add in yolo_network_config/weights/cucumber.weights
 ```
 
-* [Ordering]
+* Ordering
 
 ```
 $ cd ~/catkin_ws/src
@@ -28,20 +28,20 @@ $ cd ..
 $ catkin_make
 
 * perception
-terminal 1
+# terminal 1
 $ roslaunch darknet_ros object_detection.launch
 
-terminal 2
+# terminal 2
 * estimate position 
 $ rosrun darknet_ros show_depth.py
 
-terminal 3
+# terminal 3
 * ordering
 $ cd ~/catkin_ws/src/ordering/src
 $ rosrun ordering GAorder -g 10 -p 10 -k 10 -m 10
 $ ^C
 
-terminal 4
+# terminal 4
 $ cd ~/catkin_we/src/ordering/src
 $ rosrun ordering publisher.py
 ```
