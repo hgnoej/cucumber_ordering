@@ -19,6 +19,7 @@ $ catkin_make
 Add in yolo_network_config/weights/cucumber.weights
 ```
 
+* [Ordering]
 
 ```
 $ cd ~/catkin_ws/src
