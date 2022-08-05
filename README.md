@@ -14,6 +14,11 @@ $ catkin_make
 
 * [IntelRealSense](https://github.com/IntelRealSense/realsense-ros)
 
+* cucumber weights file [DOWNLOAD](https://drive.google.com/file/d/1RSzCzxxeflkGGB4y9GMLQCJY_EiZE-id/view?usp=sharing)
+```
+Add in yolo_network_config/weights/cucumber.weights
+```
+
 * darknet_ros
 ```
 $ cd ~/catkin_ws/src
@@ -40,7 +45,4 @@ in yolo_network_config/cfg/
 $ cp -r cucumber.cfg ~/catkin_ws/src/darknet_ros/darknet_ros/cfg
 ```
 
-* cucumber weights file [DOWNLOAD](https://drive.google.com/file/d/1RSzCzxxeflkGGB4y9GMLQCJY_EiZE-id/view?usp=sharing)
-```
-Add in yolo_network_config/weights/cucumber.weights
-```
+
