@@ -19,12 +19,24 @@ $ catkin_make
 Add in yolo_network_config/weights/cucumber.weights
 ```
 
-* darknet_ros
+* perception
 ```
 $ cd ~/catkin_ws/src
 $ git clone --recursive https://github.com/leggedrobotics/darknet_ros.git
 $ cd ..
-$ catkin_make -DCMAKE_BUILD_TYPE=Release
+$ catkin_make
+
+$ roslaunch darknet_ros object_detection.launch
+
+* estimate position 
+$ rosrun darknet_ros show_depth.py
+
+* ordering
+$ cd ~/catkin_ws/src/ordering/src
+$ rosrun ordering GAorder -g 10 -p 10 -k 10 -m 10
+$ ^C
+
+$
 ```
 
 * cucumber_detection
