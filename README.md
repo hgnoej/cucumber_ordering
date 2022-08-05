@@ -11,16 +11,9 @@ $ mkdir -p ~/catkin_ws/src
 $ cd catkin_ws
 $ catkin_make
 ```
-
 * [IntelRealSense](https://github.com/IntelRealSense/realsense-ros)
 
-* cucumber weights file [DOWNLOAD](https://drive.google.com/file/d/1RSzCzxxeflkGGB4y9GMLQCJY_EiZE-id/view?usp=sharing)
-```
-Add in yolo_network_config/weights/cucumber.weights
-```
-
 * Ordering
-
 ```
 $ cd ~/catkin_ws/src
 $ git clone -- https://github.com/hgnoej/cucumber_ordering.git
@@ -29,8 +22,8 @@ $ mv darknet_ros ordering ~/catkin_ws/src/
 $ cd ..
 $ catkin_make
 
-* perception
 # terminal 1
+* perception
 $ roslaunch darknet_ros object_detection.launch
 
 # terminal 2
@@ -46,6 +39,11 @@ $ ^C
 # terminal 4
 $ cd ~/catkin_we/src/ordering/src
 $ rosrun ordering publisher.py
+```
+
+* cucumber weights file [DOWNLOAD](https://drive.google.com/file/d/1RSzCzxxeflkGGB4y9GMLQCJY_EiZE-id/view?usp=sharing)
+```
+Add in yolo_network_config/weights/cucumber.weights
 ```
 
 
