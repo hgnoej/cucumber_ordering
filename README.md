@@ -22,7 +22,7 @@ Add in yolo_network_config/weights/cucumber.weights
 
 ```
 $ cd ~/catkin_ws/src
-$ git clone --recursive https://github.com/leggedrobotics/darknet_ros.git
+$ git clone -- https://github.com/hgnoej/cucumber_ordering.git
 $ cd ..
 $ catkin_make
 
