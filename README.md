@@ -12,7 +12,7 @@ $ cd catkin_ws
 $ catkin_make
 ```
 * [IntelRealSense](https://github.com/IntelRealSense/realsense-ros)
-
+* [Cucumber detection](https://github.com/hgnoej/cucumber_detection)
 * Ordering
 ```
 $ cd ~/catkin_ws/src
